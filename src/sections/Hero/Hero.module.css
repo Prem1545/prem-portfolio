@@ -1,0 +1,165 @@
+/* Hero section — preserving user's manual edits on object-position & keyframes */
+
+.hero {
+  min-height: calc(100vh - 72px);
+  padding-top: 100px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+}
+
+/* Text side */
+.content {
+  padding-right: 20px;
+}
+
+.greeting {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease 0.1s forwards;
+}
+
+.name {
+  font-size: 3.4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease 0.25s forwards;
+}
+
+.role {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 22px;
+  min-height: 2.2rem;
+  opacity: 0;
+  animation: fadeUp 0.6s ease 0.4s forwards;
+}
+
+.typewriter {
+  color: var(--primary-light);
+}
+
+.cursor {
+  color: var(--primary);
+  animation: blink 0.8s step-end infinite;
+  margin-left: 2px;
+}
+
+.tagline {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 520px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease 0.55s forwards;
+}
+
+.ctas {
+  gap: 12px;
+  margin-bottom: 36px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease 0.7s forwards;
+}
+
+/* Social links */
+.socials {
+  display: flex;
+  gap: 12px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease 0.85s forwards;
+}
+
+.socialLink {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color-strong);
+  background: var(--card-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: color var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.socialLink:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: rgba(249, 115, 22, 0.06);
+}
+
+/* Profile image — user's manual edits preserved */
+.avatarWrapper {
+  width: 320px;
+  height: auto;
+  border-radius: 12px;
+  padding: 8px;
+  background: var(--gradient-primary);
+  animation: float 6s ease-in-out infinite;
+}
+
+.avatar {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  background-color: var(--bg-secondary);
+}
+
+/* Keyframes — user's originals preserved */
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50%       { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .hero {
+    padding-top: 80px;
+    min-height: auto;
+  }
+  .name {
+    font-size: 2.6rem;
+  }
+  .role {
+    font-size: 1.4rem;
+  }
+  .content {
+    padding-right: 0;
+    text-align: center;
+  }
+  .tagline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ctas {
+    justify-content: center;
+  }
+  .socials {
+    justify-content: center;
+  }
+}

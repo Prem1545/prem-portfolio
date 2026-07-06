@@ -1,0 +1,59 @@
+================================================================================
+PREM KUMAR MEKALA
+Frontend Developer
+================================================================================
+Email: prem.mekala@example.com | Phone: +91 98765 43210
+GitHub: https://github.com/prem-mekala
+LinkedIn: https://linkedin.com/in/prem-mekala
+Portfolio: https://premmekala.dev
+================================================================================
+
+SUMMARY
+Highly motivated Frontend Developer with a strong foundation in building
+responsive, modern, and user-friendly web applications. Proficient in HTML,
+CSS, Bootstrap, JavaScript, and React.js. Passionate about translating design
+concepts into clean, modular code and optimizing frontend performance.
+
+TECHNICAL SKILLS
+- Core Languages: JavaScript (ES6+), HTML5, CSS3
+- Libraries & Frameworks: React.js, Bootstrap
+- Tools & Methodologies: Git, GitHub, Vite, npm, Responsive Design, CSS Modules
+
+PROJECTS
+
+1. Todo Application (React.js)
+   - Built a rich task management app with category grouping, priority tags,
+     and browser local storage persistence.
+   - Technologies: React, CSS Modules, Local Storage API.
+
+2. Employee Management System (React.js)
+   - Created a CRUD dashboard for managing staff directories, featuring dynamic search,
+     sorting, and status editing.
+   - Technologies: React Hooks, state management, custom CSS.
+
+3. Product Filter Application (JavaScript)
+   - Crafted a fast, functional store filter page utilizing advanced JS array methods,
+     dynamic search queries, and grid displays.
+   - Technologies: HTML5, CSS3, JavaScript.
+
+4. User Search & Filter Dashboard (React.js)
+   - Designed a real-time dashboard fetching records from external API endpoints,
+     implementing search throttling, pagination, and multi-tier sorting.
+   - Technologies: React Hooks, Fetch API, Tailwind / Custom Grid.
+
+5. Weather Application (React.js)
+   - Built a sleek weather dashboard detailing real-time climates and 5-day forecasts.
+   - Technologies: OpenWeather API, React.js, custom animations.
+
+6. Portfolio Website (React.js & Framer Motion)
+   - Developed a responsive, modern developer portfolio featuring page preloading,
+     typing animations, light/dark modes, and scroll reveal triggers.
+   - Technologies: React.js, Framer Motion, CSS Modules.
+
+EDUCATION & ACHIEVEMENTS
+- Bachelor of Technology in Computer Science & Engineering
+- Completed comprehensive React development courses
+- Solid grasp of React Hooks, context-api, and lifecycle processes
+- Built 10+ responsive web projects
+
+================================================================================

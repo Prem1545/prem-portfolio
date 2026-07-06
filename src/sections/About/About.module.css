@@ -1,0 +1,48 @@
+/* About section — preserving user's manual codeSnippet color edit */
+
+.about {
+  /* section-alt provides bg-secondary */
+}
+
+.heading {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  line-height: 1.35;
+}
+
+.text {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  line-height: 1.75;
+}
+
+.text code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  color: var(--primary);
+  background: rgba(249, 115, 22, 0.08);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+/* User's manual color edit preserved */
+.codeSnippet {
+  font-size: 0.83rem;
+  line-height: 1.6;
+  color: #e84a0c;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+[data-theme="dark"] .codeSnippet {
+  color: var(--secondary-light);
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 1.25rem;
+  }
+}

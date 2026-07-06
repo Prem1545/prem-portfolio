@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+/* ============================================
+   DESIGN TOKENS — Light Mode (default)
+   ============================================ */
+:root {
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --primary: #F97316;
+  --primary-light: #fb923c;
+  --primary-dark: #ea6a0a;
+  --secondary: #EAB308;
+  --secondary-light: #fbbf24;
+
+  --background: #ECFEFF;
+  --surface: #FFFFFF;
+  --surface-hover: #E0F2FE;
+
+  --text-primary: #1E293B;
+  --text-secondary: #64748B;
+  --text-muted: #94a3b8;
+
+  --border: #E2E8F0;
+
+  --success: #22C55E;
+  --danger: #EF4444;
+
+  /* Aliases used across components */
+  --bg-primary: #ECFEFF;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #E0F2FE;
+  --border-color: rgba(226, 232, 240, 0.8);
+  --border-color-strong: #CBD5E1;
+
+  --card-bg: #FFFFFF;
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --card-shadow-hover: 0 8px 30px rgba(249, 115, 22, 0.15);
+
+  --glass-bg: var(--card-bg);
+  --glass-border: var(--border-color-strong);
+  --shadow-md: var(--card-shadow);
+  --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --glow-color: rgba(249, 115, 22, 0.15);
+
+  --gradient-primary: linear-gradient(135deg, var(--primary), var(--secondary));
+  --gradient-text: linear-gradient(135deg, var(--primary-dark), var(--secondary));
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
+/* ============================================
+   DARK MODE
+   ============================================ */
+[data-theme="dark"] {
+  --primary: #F97316;
+  --primary-light: #fb923c;
+  --primary-dark: #ea6a0a;
+  --secondary: #EAB308;
+  --secondary-light: #fbbf24;
+
+  --background: #0F172A;
+  --surface: #1E293B;
+  --surface-hover: #334155;
+
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94a3b8;
+
+  --border: #475569;
+
+  --success: #22C55E;
+  --danger: #EF4444;
+
+  --bg-primary: #0F172A;
+  --bg-secondary: #1E293B;
+  --bg-tertiary: #334155;
+  --border-color: rgba(71, 85, 105, 0.5);
+  --border-color-strong: #475569;
+
+  --card-bg: #1E293B;
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --card-shadow-hover: 0 8px 30px rgba(249, 115, 22, 0.3);
+
+  --glass-bg: var(--card-bg);
+  --glass-border: var(--border-color-strong);
+  --shadow-md: var(--card-shadow);
+  --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+  --glow-color: rgba(249, 115, 22, 0.3);
+
+  --gradient-primary: linear-gradient(135deg, var(--primary), var(--secondary));
+  --gradient-text: linear-gradient(135deg, var(--primary-dark), var(--secondary));
+}
+
+/* ============================================
+   RESET & BASE
+   ============================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-fast);
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* ============================================
+   LAYOUT UTILITIES
+   ============================================ */
+.section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.section-alt {
+  background-color: var(--bg-secondary);
+  transition: background-color var(--transition-normal);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+/* ============================================
+   GRADIENT TEXT
+   ============================================ */
+.gradient-text {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   BUTTONS — complement Bootstrap's .btn
+   ============================================ */
+.btn-primary-custom {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 26px;
+  background: var(--gradient-primary);
+  color: #fff !important;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+  text-decoration: none;
+}
+
+.btn-primary-custom:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  color: #fff;
+}
+
+.btn-outline-custom {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 26px;
+  background: transparent;
+  color: var(--primary) !important;
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+  text-decoration: none;
+}
+
+.btn-outline-custom:hover {
+  background: rgba(249, 115, 22, 0.08);
+  transform: translateY(-1px);
+  color: var(--primary);
+}
+
+/* ============================================
+   CARD — simple, clean baseline
+   ============================================ */
+.portfolio-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color-strong);
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+}
+
+.portfolio-card:hover {
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-3px);
+}
+
+.glass {
+  background: var(--card-bg) !important;
+  border-color: var(--border-color-strong) !important;
+  box-shadow: var(--card-shadow) !important;
+}
+
+/* ============================================
+   OVERRIDE — Bootstrap interference fixes
+   ============================================ */
+
+/* Bootstrap resets 'box-sizing' on some elements — keep ours */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Bootstrap sets body color — override with our tokens */
+body {
+  color: var(--text-primary) !important;
+  background-color: var(--bg-primary) !important;
+}

@@ -1,0 +1,74 @@
+.loaderContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.terminal {
+  width: 90%;
+  max-width: 450px;
+  background-color: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  font-family: var(--font-mono);
+  overflow: hidden;
+}
+
+.terminalHeader {
+  background-color: #1f2937;
+  padding: 12px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red { background-color: #ef4444; }
+.yellow { background-color: #eab308; }
+.green { background-color: #22c55e; }
+
+.terminalBody {
+  padding: 24px;
+  color: #10b981;
+  font-size: 0.95rem;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.prompt {
+  color: #3b82f6;
+  margin-right: 8px;
+}
+
+.typedText {
+  white-space: pre-wrap;
+  color: #f3f4f6;
+}
+
+.cursor {
+  color: #818cf8;
+  animation: blink 0.8s infinite;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
