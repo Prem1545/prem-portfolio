@@ -160,3 +160,19 @@
 .mobileLink.active {
   color: var(--primary);
 }
+
+@media (max-width: 240px) {
+  .logoText {
+    display: none;
+  }
+  .navbar {
+    height: 60px;
+  }
+  .hamburger {
+    padding: 4px;
+  }
+  .themeBtn {
+    padding: 4px;
+    margin-left: 8px;
+  }
+}

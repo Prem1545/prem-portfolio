@@ -76,3 +76,34 @@
   font-weight: 600;
   color: var(--text-secondary);
 }
+
+@media (max-width: 240px) {
+  .categoryCard {
+    padding: 12px;
+  }
+  .categoryHeader {
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .categoryIcon {
+    padding: 8px;
+  }
+  .categoryIcon svg {
+    width: 16px;
+    height: 16px;
+  }
+  .categoryTitle {
+    font-size: 1.1rem;
+  }
+  .skillItem {
+    padding: 8px 10px;
+    gap: 8px;
+  }
+  .skillName {
+    font-size: 0.85rem;
+  }
+  .skillIcon svg {
+    width: 14px;
+    height: 14px;
+  }
+}

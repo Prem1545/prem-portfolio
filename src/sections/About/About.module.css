@@ -46,3 +46,17 @@
     font-size: 1.25rem;
   }
 }
+
+@media (max-width: 240px) {
+  .heading {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .text {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  .codeSnippet {
+    font-size: 0.7rem;
+  }
+}

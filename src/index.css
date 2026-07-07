@@ -281,3 +281,34 @@ body {
   color: var(--text-primary) !important;
   background-color: var(--bg-primary) !important;
 }
+
+/* ============================================
+   SMARTWATCH RESPONSIVENESS (162x197)
+   ============================================ */
+@media (max-width: 240px) {
+  html {
+    font-size: 12px;
+  }
+  .container, .container-fluid {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+  .section {
+    padding: 30px 0;
+  }
+  .section-header {
+    margin-bottom: 20px;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .section-label {
+    font-size: 0.7rem;
+  }
+  .btn-primary-custom, .btn-outline-custom {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    width: 100%;
+    justify-content: center;
+  }
+}

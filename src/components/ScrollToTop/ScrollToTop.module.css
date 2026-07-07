@@ -29,3 +29,18 @@
     height: 42px;
   }
 }
+
+@media (max-width: 400px) {
+  .scrollToTop {
+    bottom: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 240px) {
+  .scrollToTop {
+    display: none;
+  }
+}

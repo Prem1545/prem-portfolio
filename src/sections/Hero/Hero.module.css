@@ -158,10 +158,47 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .techStack {
+    justify-content: center;
+  }
   .ctas {
     justify-content: center;
   }
   .socials {
     justify-content: center;
+  }
+}
+
+@media (max-width: 240px) {
+  .hero {
+    padding-top: 50px;
+  }
+  .name {
+    font-size: 1.8rem;
+  }
+  .role {
+    font-size: 1.1rem;
+  }
+  .tagline {
+    font-size: 0.8rem;
+  }
+  .techStack {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.8rem;
+  }
+  .techDivider {
+    display: none;
+  }
+  .avatarWrapper {
+    display: none;
+  }
+  .ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+  .ctas button {
+    width: 100%;
+    margin-right: 0 !important;
   }
 }
