@@ -12,6 +12,7 @@ const Navbar = () => {
   const navLinks = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
+    { id: 'experience', label: 'Experience' },
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
     { id: 'contact', label: 'Contact' },
@@ -46,7 +47,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`border-bottom ${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
+    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className="container-fluid px-4 px-md-5 ">
         <div className="d-flex align-items-center justify-content-between w-100">
 

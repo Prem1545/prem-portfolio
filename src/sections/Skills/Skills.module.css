@@ -1,18 +1,19 @@
 .categoryCard {
-  padding: 30px;
+  padding: 32px;
   border-radius: 16px;
   background: var(--card-bg);
   border: 1px solid var(--border-color-strong);
   border-top: 4px solid var(--cat-color, var(--primary));
   box-shadow: var(--card-shadow);
-  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .categoryCard:hover {
-  box-shadow: var(--card-shadow-hover);
-  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
 }
 
 .categoryHeader {
@@ -23,16 +24,17 @@
 }
 
 .categoryIcon {
-  padding: 10px;
+  padding: 12px;
   border-radius: 12px;
-  background: rgba(var(--cat-color-rgb), 0.1);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .categoryTitle {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--text-primary);
   margin: 0;
@@ -41,23 +43,26 @@
 .skillsList {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
+  flex-grow: 1;
 }
 
 .skillItem {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 12px;
-  border-radius: 8px;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 10px;
   background: var(--bg-primary);
   border: 1px solid var(--border-color);
-  transition: background var(--transition-fast), border-color var(--transition-fast);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .skillItem:hover {
-  background: var(--surface-hover);
+  background: var(--bg-secondary);
   border-color: var(--cat-color);
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .skillIcon {

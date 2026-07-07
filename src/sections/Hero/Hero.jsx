@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowDown, Mail } from 'lucide-react';
 import { Github, Linkedin } from '../../components/Icons/Icons';
-import heroImg from '../../assets/hero-illustration.png';
+import heroImg from '../../assets/profile.png';
 import styles from './Hero.module.css';
 
 const titles = ['Software Developer', 'Frontend Developer', 'React Developer'];
@@ -13,29 +13,9 @@ const Hero = () => {
   const [speed, setSpeed] = useState(140);
 
   useEffect(() => {
-    const ticker = setTimeout(() => {
-      const i = loopNum % titles.length;
-      const full = titles[i];
-      const updated = isDeleting
-        ? full.substring(0, text.length - 1)
-        : full.substring(0, text.length + 1);
-
-      setText(updated);
-
-      if (!isDeleting && updated === full) {
-        setIsDeleting(true);
-        setSpeed(2000);
-      } else if (isDeleting && updated === '') {
-        setIsDeleting(false);
-        setLoopNum(loopNum + 1);
-        setSpeed(140);
-      } else {
-        setSpeed(isDeleting ? 80 : 140);
-      }
-    }, speed);
-
-    return () => clearTimeout(ticker);
-  }, [text, isDeleting, loopNum, speed]);
+    // We removed the typewriter effect to favor a clean, professional static title
+    // as requested for the V2.0 upgrade.
+  }, []);
 
   const scrollTo = (id) => {
     const el = document.getElementById(id);
@@ -56,11 +36,17 @@ const Hero = () => {
               Prem Kumar <span className="gradient-text">Mekala</span>
             </h1>
             <h2 className={styles.role}>
-              <span className={styles.typewriter}>{text}</span>
-              <span className={styles.cursor} aria-hidden="true">|</span>
+              Software Developer @ Quantum Works Pvt. Ltd.
             </h2>
+            <div className={styles.techStack}>
+              <span className={styles.techItem}>React Developer</span>
+              <span className={styles.techDivider}>|</span>
+              <span className={styles.techItem}>JavaScript</span>
+              <span className={styles.techDivider}>|</span>
+              <span className={styles.techItem}>Core Java</span>
+            </div>
             <p className={styles.tagline}>
-              I craft premium, responsive, and high-performance web applications using modern technologies like React, JavaScript, HTML5, and CSS3. Passionate about writing clean code and delivering exceptional user experiences.
+              Building responsive, scalable, and modern web applications. I specialize in delivering high-performance UI components, writing clean maintainable code, and crafting exceptional user experiences.
             </p>
 
             <div className={`${styles.ctas} d-flex flex-wrap`}>
@@ -114,7 +100,7 @@ const Hero = () => {
             <div className={styles.avatarWrapper}>
               <img
                 src={heroImg}
-                alt="Developer Illustration"
+                alt="Prem Kumar Mekala"
                 className={styles.avatar}
               />
             </div>

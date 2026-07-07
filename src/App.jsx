@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './sections/Hero/Hero';
 import About from './sections/About/About';
+import Experience from './sections/Experience/Experience';
 import Skills from './sections/Skills/Skills';
 import Projects from './sections/Projects/Projects';
 import Timeline from './sections/Timeline/Timeline';
@@ -28,6 +29,7 @@ function App() {
           <main>
             <Hero />
             <About />
+            <Experience />
             <Skills />
             <Projects />
             <Timeline />

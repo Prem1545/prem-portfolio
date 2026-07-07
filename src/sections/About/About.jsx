@@ -18,54 +18,43 @@ const About = () => {
           {/* Bio text */}
           <div className="col-md-7 mb-5 mb-md-0">
             <h3 className={styles.heading}>
-              Passionate Software & Frontend Developer
+              Professional Software Developer
             </h3>
 
             <p className={styles.text}>
-              I am a dedicated <strong>Frontend Developer</strong> with a strong foundation in modern web technologies. I specialize in building highly responsive, interactive, and user-centric applications using <strong>React</strong> and <strong>JavaScript</strong>.
+              I am a Software Developer at Quantum Works Pvt. Ltd. with a specialized focus on building production-ready frontend architectures. My day-to-day involves architecting scalable <strong>React applications</strong> and developing <strong>Reusable UI Components</strong> that accelerate development cycles and ensure design consistency across platforms.
             </p>
 
             <p className={styles.text}>
-              My technical expertise spans across <strong>HTML5, CSS3, Bootstrap, and Core Java</strong>, allowing me to understand both the frontend aesthetics and the underlying programmatic logic. I am deeply committed to <strong>Responsive Web Development</strong> and strictly adhere to <strong>Clean Code Practices</strong> to ensure maintainable, scalable, and high-performance applications.
+              My technical expertise centers around <strong>JavaScript</strong>, <strong>React</strong>, and seamless <strong>REST API Integration</strong> to deliver dynamic, data-driven user experiences. I take a meticulous approach to <strong>Responsive UI Development</strong>, ensuring perfect functionality across all device ecosystems.
             </p>
 
             <p className={styles.text}>
-              Whether it's developing dynamic web portals, interactive dashboards, or crafting seamless user experiences, I approach every project with a problem-solving mindset and a drive to deliver premium quality results.
+              Guided by a commitment to <strong>Clean Code</strong> principles and modern web standards, I build maintainable solutions designed for long-term scalability. I am currently expanding my full-stack capabilities by diving deep into <strong>Java Full Stack</strong> development with Spring Boot, reinforcing my dedication to continuous technical growth.
             </p>
-
-            <div className="mt-4">
-              <a
-                href="/Prem_Kumar_Mekala_Resume.pdf"
-                download="Prem_Kumar_Mekala_Resume.pdf"
-                className="btn-primary-custom"
-                id="about-download-resume"
-              >
-                Download Resume <Download size={16} />
-              </a>
-            </div>
           </div>
 
           {/* Terminal card */}
           <div className="col-md-5">
-            <TerminalCard title="prem.json">
+            <TerminalCard title="prem_kumar.json">
               <pre className={styles.codeSnippet}>
 {`{
   "name": "Prem Kumar Mekala",
-  "role": "Software & Frontend Developer",
-  "location": "India",
-  "core_skills": [
-    "React Development",
-    "JavaScript",
-    "HTML5 / CSS3",
-    "Bootstrap",
-    "Core Java"
+  "role": "Software Developer",
+  "company": "Quantum Works Pvt. Ltd.",
+  "location": "Hyderabad, India",
+  "core_competencies": [
+    "React Architecture",
+    "Reusable Components",
+    "REST API Integration",
+    "Responsive UI Development",
+    "Clean Code Practices"
   ],
-  "focus": [
-    "Responsive Web Development",
-    "Clean Code Practices",
-    "Performance Optimization"
-  ],
-  "availableForHire": true
+  "learning": [
+    "Spring Boot",
+    "Hibernate/JPA",
+    "Java Full Stack"
+  ]
 }`}
               </pre>
             </TerminalCard>

@@ -90,21 +90,22 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 12px 24px;
+  border-radius: 12px;
   background: var(--card-bg);
-  border: 1px solid var(--glass-border);
+  border: 1px solid var(--border-color-strong);
   color: var(--text-secondary);
   font-size: 0.95rem;
   font-weight: 600;
-  transition: all var(--transition-fast);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socialBtn:hover {
   border-color: var(--primary);
-  color: var(--primary);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px var(--glow-color);
+  color: #fff;
+  background: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(249, 115, 22, 0.25);
 }
 
 .formColumn {
