@@ -1,0 +1,288 @@
+.footer {
+  background: var(--bg-footer);
+  position: relative;
+  font-family: var(--font-sans, sans-serif);
+  padding: 0;
+}
+
+.container {
+  padding-top: 56px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.verticalDivider {
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+}
+
+.col1 {
+  flex: 2;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.col2 {
+  flex: 1;
+  min-width: 130px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+}
+
+.col3 {
+  flex: 1.5;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-mono, monospace);
+  font-weight: 700;
+  font-size: 1.6rem;
+  cursor: pointer;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+}
+
+.logoTag {
+  color: #FFFFFF;
+}
+
+.logoText {
+  color: #F97316;
+}
+
+.logoSubText {
+  color: #FFFFFF;
+}
+
+.tagline {
+  color: #94A3B8;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+
+/* Socials */
+.socials {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.socialLink {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94A3B8;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  color: #FFFFFF;
+  border-color: #F97316;
+  background: #F97316;
+  transform: translateY(-3px);
+}
+
+/* Titles */
+.title {
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+}
+
+/* Quick Links */
+.linksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.linkButton {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #CBD5E1;
+  font-size: 0.95rem;
+  font-family: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.bullet {
+  width: 4px;
+  height: 4px;
+  background-color: #F97316;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.linkButton:hover {
+  color: #FFFFFF;
+  transform: translateX(4px);
+}
+
+.linkButton:hover .bullet {
+  transform: scale(1.5);
+}
+
+/* Connect Section */
+.connectText {
+  color: #94A3B8;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.contactBtn {
+  background: transparent;
+  border: 1px solid #F97316;
+  color: #F97316;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  font-family: inherit;
+  line-height: 1.5;
+  text-decoration: none;
+  outline: none;
+}
+
+.contactBtn:hover {
+  background-color: rgba(249, 115, 22, 0.1);
+  box-shadow: 0 6px 12px rgba(249, 115, 22, 0.15);
+}
+
+.sendIcon {
+  color: #F97316;
+}
+
+/* Bottom Section */
+.bottomSection {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy {
+  color: #94A3B8;
+  font-size: 0.9rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* Tablet (2 columns) */
+@media (max-width: 900px) {
+  .topSection {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .verticalDivider {
+    display: none;
+  }
+
+  .col1 {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .col2 {
+    padding-left: 0;
+  }
+
+  .col2,
+  .col3 {
+    flex: 1;
+  }
+}
+
+/* Mobile (stacked top, side-by-side links) */
+@media (max-width: 600px) {
+  .topSection {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-align: left;
+    gap: 32px 16px;
+  }
+
+  .col1 {
+    flex: 100%;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .col2,
+  .col3 {
+    flex: 1;
+    min-width: 120px;
+    align-items: flex-start;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .linkButton {
+    justify-content: flex-start;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contactBtn {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    width: 100%;
+  }
+}

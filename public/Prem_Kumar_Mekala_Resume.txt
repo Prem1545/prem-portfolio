@@ -1,59 +1,75 @@
-================================================================================
 PREM KUMAR MEKALA
-Frontend Developer
-================================================================================
-Email: prem.mekala@example.com | Phone: +91 98765 43210
-GitHub: https://github.com/prem-mekala
-LinkedIn: https://linkedin.com/in/prem-mekala
-Portfolio: https://premmekala.dev
-================================================================================
+Hyderabad, Telangana | +91 7032536697 | premyadavofficial15@gmail.com
+Portfolio | GitHub | LinkedIn
 
 SUMMARY
-Highly motivated Frontend Developer with a strong foundation in building
-responsive, modern, and user-friendly web applications. Proficient in HTML,
-CSS, Bootstrap, JavaScript, and React.js. Passionate about translating design
-concepts into clean, modular code and optimizing frontend performance.
+Software Developer with professional experience in developing responsive and user-friendly web applications using React.js, JavaScript, HTML5, CSS3, and Bootstrap. Experienced in converting UI/UX designs into responsive, high-quality web interfaces, integrating REST APIs, and building reusable React components. Strong understanding of responsive web design, performance optimization, Git version control, and modern frontend development practices. Passionate about writing clean, maintainable code and continuously learning new technologies.
+
+EXPERIENCE
+Software Developer
+Quantum Works Pvt. Ltd. | February 2026 – Present
+• Developed responsive web applications using React.js, JavaScript, HTML5, CSS3, and Bootstrap.
+• Built reusable React components to improve application scalability and maintainability.
+• Designed mobile-first, responsive user interfaces optimized for desktop, tablet, and mobile devices.
+• Integrated REST APIs and ensured cross-browser compatibility for consistent user experiences.
+• Collaborated with cross-functional team members to develop new features and resolve application issues.
+• Improved application performance through debugging, code optimization, and utilized Git within an Agile development environment.
 
 TECHNICAL SKILLS
-- Core Languages: JavaScript (ES6+), HTML5, CSS3
-- Libraries & Frameworks: React.js, Bootstrap
-- Tools & Methodologies: Git, GitHub, Vite, npm, Responsive Design, CSS Modules
+Frontend: React.js, JavaScript (ES6+), HTML5, CSS3, Bootstrap
+Backend: Core Java
+Database: MySQL
+Tools: Git, GitHub, VS Code, Eclipse
+Concepts: OOP, React Components, React Router, Responsive Web Design, DOM Manipulation
+Currently Learning: Spring Boot, Spring MVC, Hibernate/JPA
 
 PROJECTS
+Personal Portfolio
+Tech Stack: React.js | JavaScript | Bootstrap | React Router | Vercel
+• Designed and developed a fully responsive personal portfolio showcasing professional experience, projects, technical skills, and contact information.
+• Built reusable React components, optimized website performance, and ensured responsive layouts across modern browsers.
+• Deployed the application on Vercel following modern frontend development best practices.
+• Integrated downloadable resume functionality, project filtering, smooth animations, and responsive navigation to create a modern developer portfolio.
 
-1. Todo Application (React.js)
-   - Built a rich task management app with category grouping, priority tags,
-     and browser local storage persistence.
-   - Technologies: React, CSS Modules, Local Storage API.
+Architect Company Website
+Tech Stack: React.js | JavaScript | Bootstrap
+• Designed and developed a responsive business website for an architecture firm with modern UI components and mobile-first layouts.
+• Built reusable components including Navbar, Hero, Services, Projects, About, and Contact sections.
+• Designed a clean, modern, and mobile-friendly user interface optimized for multiple screen sizes.
 
-2. Employee Management System (React.js)
-   - Created a CRUD dashboard for managing staff directories, featuring dynamic search,
-     sorting, and status editing.
-   - Technologies: React Hooks, state management, custom CSS.
+Player Directory Application
+Tech Stack: React.js | React Router | REST API | Bootstrap
+• Developed a responsive player directory application with search, filtering, and player detail pages.
+• Implemented React Router for seamless navigation and dynamic routing.
+• Integrated REST APIs to display player information and designed an intuitive, responsive interface using Bootstrap.
 
-3. Product Filter Application (JavaScript)
-   - Crafted a fast, functional store filter page utilizing advanced JS array methods,
-     dynamic search queries, and grid displays.
-   - Technologies: HTML5, CSS3, JavaScript.
+Bike Mate – Console Application
+Tech Stack: Core Java | Object-Oriented Programming
+• Developed a Java console-based application following Object-Oriented Programming principles.
+• Implemented user authentication, bike search, showroom availability, and purchase management features.
+• Designed an admin module to manage bike inventory and customer records efficiently.
 
-4. User Search & Filter Dashboard (React.js)
-   - Designed a real-time dashboard fetching records from external API endpoints,
-     implementing search throttling, pagination, and multi-tier sorting.
-   - Technologies: React Hooks, Fetch API, Tailwind / Custom Grid.
+Tip Calculator
+Tech Stack: HTML5 | CSS3 | JavaScript | DOM Manipulation
+• Developed an interactive tip calculator with real-time bill and tip calculations.
+• Implemented input validation and dynamic updates for an improved user experience.
+• Designed a responsive interface compatible with desktop and mobile devices.
 
-5. Weather Application (React.js)
-   - Built a sleek weather dashboard detailing real-time climates and 5-day forecasts.
-   - Technologies: OpenWeather API, React.js, custom animations.
+Guess the Number Game
+Tech Stack: HTML5 | CSS3 | JavaScript | DOM Manipulation
+• Developed an interactive browser-based number guessing game using JavaScript.
+• Implemented random number generation, score tracking, reset functionality, and instant user feedback.
+• Strengthened JavaScript fundamentals through DOM manipulation and event handling.
 
-6. Portfolio Website (React.js & Framer Motion)
-   - Developed a responsive, modern developer portfolio featuring page preloading,
-     typing animations, light/dark modes, and scroll reveal triggers.
-   - Technologies: React.js, Framer Motion, CSS Modules.
+EDUCATION
+TKR College of Engineering and Technology (Autonomous), Hyderabad
+Bachelor of Technology – Mechanical Engineering, CGPA: 7.07 | 2020 – 2024
 
-EDUCATION & ACHIEVEMENTS
-- Bachelor of Technology in Computer Science & Engineering
-- Completed comprehensive React development courses
-- Solid grasp of React Hooks, context-api, and lifecycle processes
-- Built 10+ responsive web projects
+Jawahar Navodaya Vidyalaya, Karimnagar
+Senior Secondary (CBSE), Percentage: 81% | 2018 – 2020
 
-================================================================================
+Jawahar Navodaya Vidyalaya, Karimnagar
+Secondary School (CBSE), Percentage: 85.2% | 2018
+
+CERTIFICATIONS
+Java Full Stack Developer — CVCORP — September 2024 – February 2025

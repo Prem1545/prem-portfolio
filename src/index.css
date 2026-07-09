@@ -30,12 +30,13 @@
   --bg-primary: #ECFEFF;
   --bg-secondary: #FFFFFF;
   --bg-tertiary: #E0F2FE;
-  --border-color: rgba(226, 232, 240, 0.8);
-  --border-color-strong: #CBD5E1;
+  --border-color: rgba(226, 232, 240, 0.6);
+  --border-color-strong: rgba(0, 0, 0, 0.12);
 
   --card-bg: #FFFFFF;
-  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  --card-shadow-hover: 0 8px 30px rgba(249, 115, 22, 0.15);
+  --card-gradient: linear-gradient(135deg, #FFFFFF 0%, #F8FFF8 55%, #EDF8EF 100%);
+  --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.03), 0 10px 30px rgba(0, 0, 0, 0.04);
+  --card-shadow-hover: 0 4px 15px rgba(0, 0, 0, 0.04), 0 15px 35px rgba(249, 115, 22, 0.12);
 
   --glass-bg: var(--card-bg);
   --glass-border: var(--border-color-strong);
@@ -46,8 +47,19 @@
   --gradient-primary: linear-gradient(135deg, var(--primary), var(--secondary));
   --gradient-text: linear-gradient(135deg, var(--primary-dark), var(--secondary));
 
-  --transition-fast: 0.2s ease;
-  --transition-normal: 0.3s ease;
+  /* Section Backgrounds */
+  --bg-about: linear-gradient(180deg, #FFFFFF 0%, #FAFEFF 100%);
+  --bg-experience: linear-gradient(135deg, #ECFEFF 0%, #F7FFFD 50%, #ECFEFF 100%);
+  --bg-skills-frontend: linear-gradient(135deg, #FFFFFF 0%, #F7FFF9 100%);
+  --bg-skills-backend: linear-gradient(135deg, #FFFFFF 0%, #FFFDF5 100%);
+  --bg-skills-tools: linear-gradient(135deg, #FFFFFF 0%, #F6FFF8 100%);
+  --bg-skills-learning: linear-gradient(135deg, #FFFFFF 0%, #FAF7FF 100%);
+  --bg-projects: linear-gradient(180deg, #FFFFFF, #FEFFFC);
+  --bg-contact: linear-gradient(180deg, #FFFFFF, #FAFFFD);
+  --bg-footer: linear-gradient(135deg, #0F172A, #1E293B, #111827);
+
+  --transition-fast: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ============================================
@@ -76,12 +88,13 @@
   --bg-primary: #0F172A;
   --bg-secondary: #1E293B;
   --bg-tertiary: #334155;
-  --border-color: rgba(71, 85, 105, 0.5);
-  --border-color-strong: #475569;
+  --border-color: rgba(255, 255, 255, 0.04);
+  --border-color-strong: rgba(255, 255, 255, 0.15);
 
   --card-bg: #1E293B;
-  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  --card-shadow-hover: 0 8px 30px rgba(249, 115, 22, 0.3);
+  --card-gradient: linear-gradient(135deg, #1E293B 0%, #1F2D2A 55%, #1C2925 100%);
+  --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.2), 0 10px 30px rgba(0, 0, 0, 0.3);
+  --card-shadow-hover: 0 4px 15px rgba(0, 0, 0, 0.3), 0 15px 35px rgba(249, 115, 22, 0.25);
 
   --glass-bg: var(--card-bg);
   --glass-border: var(--border-color-strong);
@@ -91,12 +104,25 @@
 
   --gradient-primary: linear-gradient(135deg, var(--primary), var(--secondary));
   --gradient-text: linear-gradient(135deg, var(--primary-dark), var(--secondary));
+
+  /* Section Backgrounds */
+  --bg-about: linear-gradient(180deg, #1E293B 0%, #162032 100%);
+  --bg-experience: linear-gradient(135deg, #0F172A 0%, #162032 50%, #0F172A 100%);
+  --bg-skills-frontend: linear-gradient(135deg, #1E293B 0%, #1C2B36 100%);
+  --bg-skills-backend: linear-gradient(135deg, #1E293B 0%, #202722 100%);
+  --bg-skills-tools: linear-gradient(135deg, #1E293B 0%, #1E2530 100%);
+  --bg-skills-learning: linear-gradient(135deg, #1E293B 0%, #221F2D 100%);
+  --bg-projects: linear-gradient(180deg, #1E293B, #1A2434);
+  --bg-contact: linear-gradient(180deg, #1E293B, #162032);
+  --bg-footer: linear-gradient(135deg, #020617, #0F172A, #020617);
 }
 
 /* ============================================
    RESET & BASE
    ============================================ */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -128,7 +154,10 @@ ul {
   list-style: none;
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
   font-family: inherit;
 }
 
@@ -142,13 +171,16 @@ img {
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--bg-primary);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--border);
   border-radius: 3px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--text-muted);
 }
@@ -164,6 +196,7 @@ img {
 .section-alt {
   background-color: var(--bg-secondary);
   transition: background-color var(--transition-normal);
+  --card-bg: var(--card-gradient);
 }
 
 .section-header {
@@ -218,9 +251,14 @@ img {
 }
 
 .btn-primary-custom:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
+  opacity: 0.95;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.25);
   color: #fff;
+}
+
+.btn-primary-custom:active {
+  transform: scale(0.98);
 }
 
 .btn-outline-custom {
@@ -228,21 +266,27 @@ img {
   align-items: center;
   gap: 8px;
   padding: 10px 26px;
-  background: transparent;
-  color: var(--primary) !important;
-  border: 1px solid var(--primary);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(249, 115, 22, 0.1) 100%);
+  color: var(--text-primary) !important;
+  border: 1px solid rgba(249, 115, 22, 0.3);
   border-radius: 6px;
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background var(--transition-fast), transform var(--transition-fast);
+  transition: all var(--transition-fast);
   text-decoration: none;
 }
 
 .btn-outline-custom:hover {
-  background: rgba(249, 115, 22, 0.08);
-  transform: translateY(-1px);
-  color: var(--primary);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(249, 115, 22, 0.15) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.15);
+  border-color: rgba(249, 115, 22, 0.6);
+  color: var(--text-primary) !important;
+}
+
+.btn-outline-custom:active {
+  transform: scale(0.98);
 }
 
 /* ============================================
@@ -272,7 +316,9 @@ img {
    ============================================ */
 
 /* Bootstrap resets 'box-sizing' on some elements — keep ours */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -289,26 +335,49 @@ body {
   html {
     font-size: 12px;
   }
-  .container, .container-fluid {
+
+  .container,
+  .container-fluid {
     padding-left: 4px !important;
     padding-right: 4px !important;
   }
+
   .section {
     padding: 30px 0;
   }
+
   .section-header {
     margin-bottom: 20px;
   }
+
   .section-title {
     font-size: 1.5rem;
   }
+
   .section-label {
     font-size: 0.7rem;
   }
-  .btn-primary-custom, .btn-outline-custom {
+
+  .btn-primary-custom,
+  .btn-outline-custom {
     padding: 6px 12px;
     font-size: 0.8rem;
     width: 100%;
     justify-content: center;
+  }
+}
+
+/* ============================================
+   PERFORMANCE & ACCESSIBILITY
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
