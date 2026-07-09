@@ -152,7 +152,21 @@
   filter: contrast(1.05) saturate(1.05) brightness(1.02); /* Slight enhancement */
 }
 
-/* Removed floating animation for a more stable, professional look */
+@keyframes float {
+  0%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(-12px);
+  }
+  100%{
+    transform:translateY(0);
+  }
+}
+
+.heroImage {
+    animation: float 5s ease-in-out infinite;
+}
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }

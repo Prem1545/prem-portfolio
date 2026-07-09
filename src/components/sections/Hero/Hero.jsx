@@ -78,7 +78,7 @@ const Hero = () => {
 
           {/* Profile image */}
           <div className="col-lg-5 d-flex justify-content-center mt-5 mt-lg-0">
-            <div className={styles.avatarWrapper}>
+            <div className={`${styles.avatarWrapper} ${styles.heroImage}`}>
               <img
                 src="/profile.png"
                 alt="Prem Kumar Mekala"
